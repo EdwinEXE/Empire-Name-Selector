@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shuffled List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Shuffled List Generator</h1>
+
+        <input type="text" id="nameInput" placeholder="Enter name" />
+        <button id="addNameButton">Add Name</button>
+
+        <div>
+            <button id="revealListButton">Reveal List</button>
+            <button id="resetButton">Reset</button>
+        </div>
+
+        <!-- Hidden List Container -->
+        <ul id="nameList" class="hidden"></ul>
+
+        <!-- Confirmation Modals -->
+        <div id="confirmModal" class="modal">
+            <div class="modal-content">
+                <p>Are you sure you want to reveal the list?</p>
+                <button id="confirmReveal">Yes, reveal it!</button>
+                <button id="cancelReveal">No, cancel</button>
+            </div>
+        </div>
+
+        <div id="resetConfirmModal" class="modal">
+            <div class="modal-content">
+                <p>Are you sure you want to reset the list?</p>
+                <button id="confirmReset">Yes, reset</button>
+                <button id="cancelReset">No, cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
